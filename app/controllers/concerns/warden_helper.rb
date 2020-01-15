@@ -13,7 +13,7 @@ module WardenHelper
 		warden.user
 	end
 	def warden
-		env["warden"]
+		request.env["warden"]
 	end
 	def authenticate!
 		warden.authenticate!
